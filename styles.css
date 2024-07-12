@@ -1,125 +1,241 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: sans-serif;
-    border: none;
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  border: none;
 }
 
-body{
-    background-color: #FFFFFF;
+body {
+  background: #f4b645;
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-span{
-    color:#000080;
+span {
+  color: #ffffff;
 }
 
-.container{
-    display:grid;
-    align-items: center;
-    justify-content: center;
+.titulo {
+  color: #000080;
 }
 
-h1{
-    margin-top: 60px;
-    font-weight: bold;
-    font-size: 50px;
-    color: #4682B4
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
 }
 
-h3{
-    margin-top: 40px;
-    font-weight: bold;
-    font-size: 25px;
-    color: #000080;
+h1 {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffffff;
 }
 
-.container-dois{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h3 {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
 }
 
-.conteudo{
-    margin-top: 5vh ;
-    padding: 20px;
-    width: 450px;
-    height: 630px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: hsl(244, 71%, 58%);
-    border-radius: 15px;
+.fa-mouse-pointer{
+color:  #000080;
+;
 }
 
-
-p{
-    margin-bottom: 30px;
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+.saudacao {
+  margin-top: 10px;
 }
 
-#cidade_input{
-    height: 35px;
-    width: 300px;
-    border-radius: 10px;
-    border: 1px solid #FFA500;
-    outline: none;
-
+.container-dois {
+    padding-bottom: 40px;
+  margin-top: 20px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.btn{
-    margin-top: 20px;
-    height: 30px;
-    width: 200px;
-    border-radius: 20px;
-    background-color: #FFA500;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #fbba42;
+.conteudo {
+  padding: 20px;
+  width: 450px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: hsl(244, 71%, 58%);
+  border-radius: 15px;
 }
 
-.resultado-clima{
-    margin-top: 30px;
+.conteudo:hover {
+  background-color: hsl(244, 68%, 59%);
 }
 
-.h2{
-    margin-top: 20px;
-    padding-top: 30px;
-    font-size: 30px;
+.cidade {
+  color: white;
 }
 
-#city{
-    margin-left: 15px;
+p {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
-#description #weather-icon{
-    margin-bottom: 20px;
-
+#cidade_input {
+  height: 35px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ffa500;
+  outline: none;
 }
 
-#details-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn {
+  margin-top: 20px;
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: #ffa500;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fbba42;
 }
 
-#details-container #umidity{
-    margin: 0.6rem;
-    padding: 0.6rem;;
-    border-right: 1px solid white;
+.resultado-clima {
+  margin-top: 60px;
 }
 
+.h2 {
+  margin-top: 20px;
+  padding-top: 30px;
+  font-size: 30px;
+}
 
+#city {
+  margin-left: 15px;
+}
 
+#description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#weather-icon {
+  margin-bottom: 10px;
+}
+
+#details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#details-container #umidity {
+  margin: 0.6rem;
+  padding: 0.6rem;
+  border-right: 1px solid white;
+}
+
+.error {
+  margin-top: 50px;
+  color: rgb(251, 251, 251);
+}
+
+@media (max-width: 768px) {
+    .container {
+      height: auto;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 40px;
+      margin-top: 40px;
+    }
+  
+    h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .container-dois {
+        
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .conteudo {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    .saudacao{
+        margin-top: 80px;
+    }
+  
+    #cidade_input {
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%;
+      height: 40px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .h2 {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  
+    h3 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  
+    .conteudo {
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .saudacao{
+        margin-top: 80px;
+    }
+
+    .container-dois{
+        margin-top: 100px;
+
+    }
+  
+    .btn {
+      height: 35px;
+      font-size: 14px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .h2 {
+      font-size: 22px;
+    }
+  }
